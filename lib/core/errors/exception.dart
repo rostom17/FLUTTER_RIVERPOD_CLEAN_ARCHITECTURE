@@ -56,14 +56,14 @@ class UnauthorizedException extends AppException {
 
 class ForbiddenException extends AppException {
   const ForbiddenException({
-    super.message = "Resource access denied.",
+    super.message = "You don't have permission to perform this action.",
     super.statusCode = 403,
   });
 }
 
 class NotFoundException extends ClientSideException {
   const NotFoundException({
-    super.message = "Resource not found.",
+    super.message = "The requested resource couldn't be found.",
     super.statusCode = 404,
   });
 }

@@ -1,7 +1,7 @@
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 
-abstract class SecureStorageService {
-  const SecureStorageService._();
+abstract class SecureStorage {
+  const SecureStorage._();
 
   static const _storage = FlutterSecureStorage(
     aOptions: AndroidOptions(),

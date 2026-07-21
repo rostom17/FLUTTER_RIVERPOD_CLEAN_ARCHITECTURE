@@ -11,10 +11,10 @@ abstract interface class TokenService {
   Future<void> deleteAllTokens();
 }
 
-class TokenStorageServiceImpl implements TokenService {
+class TokenServiceImpl implements TokenService {
   final FlutterSecureStorage _storage;
 
-  TokenStorageServiceImpl(this._storage);
+  TokenServiceImpl(this._storage);
 
   @override
   Future<String?> getAccessToken() async =>

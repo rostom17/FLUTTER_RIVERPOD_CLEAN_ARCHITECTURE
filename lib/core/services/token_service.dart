@@ -14,7 +14,7 @@ abstract interface class TokenService {
 class TokenServiceImpl implements TokenService {
   final FlutterSecureStorage _storage;
 
-  TokenServiceImpl(this._storage);
+  const TokenServiceImpl(this._storage);
 
   @override
   Future<String?> getAccessToken() async =>
